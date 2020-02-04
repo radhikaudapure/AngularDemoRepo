@@ -1,0 +1,9 @@
+<p>directives works!</p>
+
+<h4 [hidden]="true">Welcome To Angular!</h4>
+<input type="text" [(ngModel)]="employee">
+
+<p *ngFor="let employee of employees; index as i;first as f"> 
+
+    {{i}} {{employee.name}}  {{f}}
+</p>

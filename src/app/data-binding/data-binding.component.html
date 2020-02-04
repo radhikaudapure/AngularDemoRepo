@@ -1,0 +1,22 @@
+<p>data-binding works!</p>
+
+<h5>String Interpolation!</h5>
+<p>Server with ID {{serverID  }} is {{serverStatus | uppercase | lowercase}}. </p>  
+
+<h5>Event Binding!</h5>
+<button class="btn btn-primary"  (click)="onToggleDisableButton()">Toggle Button</button>  
+
+
+
+<h5>Property Binding!</h5>
+<button class="btn btn-primary"  [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>  
+
+<input type="text" [(ngModel)]="name">
+{{name}}
+
+<!-- <select [(ngModel)]="color">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+</select>
+
+{{color}} -->
